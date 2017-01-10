@@ -51,3 +51,5 @@ post '/new' do
   redirect to('/')
   # erb "You typed #{content}"
 end
+
+
