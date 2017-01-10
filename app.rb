@@ -39,5 +39,10 @@ post '/new' do
 	# get var from POST-request
   content = params[:content]
 
+  if content.length <= 0
+  	@error = "Type post text"
+  	return erb :new
+  end
+
   erb "You typed #{content}"
 end
